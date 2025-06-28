@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTG Perfumes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">GTG</div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <button id="searchToggle">🔍</button>
+          <button id="hamburger">☰</button>
+        </div>
+      </div>
+      <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </header>
+
+    <!-- PRODUCT SECTION -->
+    <section id="products" class="product-section">
+      <div class="container product-grid">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="mainImage" src="assets/image1.jpg" alt="GTG Perfume" />
+          </div>
+          <div class="gallery-thumbnails">
+            <img src="assets/image1.jpg" data-index="0" class="thumb active" />
+            <img src="assets/image2.jpg" data-index="1" class="thumb" />
+            <img src="assets/image3.jpg" data-index="2" class="thumb" />
+          </div>
+          <div class="gallery-controls">
+            <button id="prevBtn">←</button>
+            <button id="nextBtn">→</button>
+          </div>
+        </div>
+
+        <div class="product-options">
+          <h2>GTG Perfumes</h2>
+          <form id="productForm">
+            <div class="option-group">
+              <h3>Fragrance</h3>
+              <label
+                ><input type="radio" name="fragrance" value="vanilla" checked />
+                Vanilla</label
+              >
+              <label
+                ><input type="radio" name="fragrance" value="lavender" />
+                Lavender</label
+              >
+              <label
+                ><input type="radio" name="fragrance" value="musk" />
+                Musk</label
+              >
+            </div>
+
+            <div class="option-group">
+              <h3>Purchase Type</h3>
+              <label
+                ><input type="radio" name="type" value="single" checked />
+                Single</label
+              >
+              <label
+                ><input type="radio" name="type" value="subscription" />
+                Subscription</label
+              >
+              <label
+                ><input type="radio" name="type" value="try" /> Try Once</label
+              >
+            </div>
+
+            <div id="expandableDetails"></div>
+
+            <a id="addToCart" href="#" class="btn">Add to Cart</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERCENTAGE SECTION -->
+    <section class="percentage-section">
+      <div class="container">
+        <div class="stat" data-target="84">0%</div>
+        <div class="stat" data-target="78">0%</div>
+        <div class="stat" data-target="92">0%</div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>GTG</th>
+              <th>Others</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$50</td>
+              <td>$75</td>
+            </tr>
+            <tr>
+              <td>Longevity</td>
+              <td>12 hrs</td>
+              <td>6 hrs</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonial-section">
+      <div class="container testimonial-scroll">
+        <!-- Add testimonial items -->
+        <div class="testimonial">"Smells amazing!" - Sarah</div>
+        <div class="testimonial">"Long-lasting scent." - John</div>
+        <div class="testimonial">"Highly recommended." - Lisa</div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="faq-item">
+          <button class="faq-question">What is GTG?</button>
+          <div class="faq-answer">GTG is a premium perfume brand...</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How long does it last?</button>
+          <div class="faq-answer">Up to 12 hours on skin...</div>
+        </div>
+        <!-- More FAQs -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">&copy; 2025 GTG Perfumes</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
