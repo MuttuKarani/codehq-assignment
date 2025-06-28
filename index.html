@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GTG Perfumes</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <div class="logo">GTG</div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </nav>
-        <div class="header-icons">
-          <button id="searchToggle">🔍</button>
-          <button id="hamburger">☰</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GTG Perfumes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="navbar container">
+      <div class="logo">GTG</div>
+  
+      <nav class="nav-center">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop ▾</a></li>
+          <li><a href="#">Fragrances</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <div class="nav-right">
+        <button class="search-btn">🔍</button>
+        <a href="#" class="btn green">Shop Now</a>
       </div>
-      <div class="search-bar" id="searchBar">
-        <input type="text" placeholder="Search..." />
+    </div>
+  
+    <!-- Hero Content here -->
+    <div class="hero-content container">
+      <div class="badge"> Awarded the best perfume in the world</div>
+      <div class="live-stats">Live your best life.</div>
+      <div class="stats">
+        <div><strong>10x</strong><span>power</span></div>
+        <div><strong>9</strong><span>ingredients</span></div>
+        <div><strong>20K+</strong><span>happy customers</span></div>
       </div>
-    </header>
+      <a href="#" class="btn green">Shop Now</a>
+    </div>
+  </header>
+  
+  
+  
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+<section class="features">
+  <div class="feature-item">
+    <i class="fas fa-heart"></i>
+    <p>30-day Guarantee</p>
+  </div>
+  <div class="feature-item">
+    <i class="fas fa-globe"></i>
+    <p>Worldwide Shipping</p>
+  </div>
+  <div class="feature-item">
+    <i class="fas fa-truck-fast"></i>
+    <p>Fast Delivery</p>
+  </div>
+  <div class="feature-item">
+    <i class="fas fa-leaf"></i>
+    <p>Eco Certified</p>
+  </div>
+</section>
+<section class="ingredients-section">
+  <div class="ingredients-left">
+    <p class="section-label">POWERFUL SCENTS</p>
+    <h2>All of the Best Ingredients,<br> None of the Compromise</h2>
+    <p>
+      GTG delivers <strong>10x longer-lasting fragrance</strong> with our advanced concentration formula – engineered for all-day projection and exceptional sillage.
+    </p>
+    <a href="#" class="btn green">View All Fragrances</a>
+  </div>
+
+  <div class="ingredients-right">
+    <div class="circle">
+      <img src="/assets/scent.png" class="bottle" alt="Perfume Bottle">
+      
+      <!-- Ingredient icons -->
+      <div class="ingredient" style="top: 0%; left: 50%;"><img src="/assets/whitebuublerose.png"><span>Lily</span></div>
+      <div class="ingredient" style="top: 20%; left: 85%;"><img src="/assets/whitrose.png"><span>Jasmine</span></div>
+      <div class="ingredient" style="top: 50%; left: 100%;"><img src="/assets/stick.png"><span>Vanilla</span></div>
+      <div class="ingredient" style="top: 80%; left: 85%;"><img src="/assets/purplerose.png"><span>Lavender</span></div>
+      <div class="ingredient" style="top: 100%; left: 50%;"><img src="/assets/redrose.png"><span>Rose</span></div>
+      <div class="ingredient" style="top: 80%; left: 15%;"><img src="/assets/yellowround.png"><span>Tulip</span></div>
+      <div class="ingredient" style="top: 50%; left: 0%;"><img src="/assets/yellorrose.png"><span>Lily</span></div>
+      <div class="ingredient" style="top: 20%; left: 15%;"><img src="/assets/whitetulip.png"><span>Rose</span></div>
+    </div>
+  </div>
+</section>
+
 
     <!-- PRODUCT SECTION -->
     <section id="products" class="product-section">
       <div class="container product-grid">
         <div class="product-gallery">
           <div class="main-image">
-            <img id="mainImage" src="assets/image1.jpg" alt="GTG Perfume" />
+            <img id="mainImage" src="assets/sset.png" alt="GTG Perfume" />
           </div>
           <div class="gallery-thumbnails">
             <img src="assets/image1.jpg" data-index="0" class="thumb active" />
